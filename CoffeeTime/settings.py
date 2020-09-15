@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'w9wt9lo8lp7y_+j1=xjog5@8x+*b66*e6r_1i@vy*w8*)muj@s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['coffeetime-api.herokuapp.com']
 
