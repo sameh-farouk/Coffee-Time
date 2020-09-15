@@ -1,5 +1,5 @@
 # Coffee-Time
-a Project using Python/Django, Django Rest Framework and MongoDB to Build a **RESTful API** with endpoints that return products data in JSON format for building an e-commerce mobile application
+a Project using Python/Django, Django Rest Framework and MongoDB to Build a **RESTful API** with endpoints that return products data in JSON format for Consuming by un e-commerce mobile application.
 
 ### live demo with browsable API:
 Please check the link to instance of the web service deployed on **Heroku** and configured with a **MongoDB Atlas**, a Cloud-hosted MongoDB service.
