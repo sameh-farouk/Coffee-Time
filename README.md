@@ -109,7 +109,7 @@ By default, the API will return the format specified by the headers, which in th
    - [GET /api/coffee-machines/?product_type__name=ESPRESSO_MACHINE](https://coffeetime-api.herokuapp.com/api/coffee-machines/?format=json&product_type__name=ESPRESSO_MACHINE)
  
  - All small pods:
-   - [GET /api/coffee-machines/?product_type__name=COFFEE_POD_SMALL](https://coffeetime-api.herokuapp.com/api/coffee-machines/?format=json&product_type__name=COFFEE_POD_SMALL)
+   - [GET /api/coffee-pods/?product_type__name=COFFEE_POD_SMALL](https://coffeetime-api.herokuapp.com/api/coffee-pods/?format=json&product_type__name=COFFEE_POD_SMALL)
  
  - All pods sold in 7 dozen packs:
-   - [GET /api/coffee-pods/?pack_size__dozen=7](https://coffeetime-api.herokuapp.com/api/coffee-machines/?format=json&?pack_size__dozen=7)
+   - [GET /api/coffee-pods/?pack_size__dozen=7](https://coffeetime-api.herokuapp.com/api/coffee-pods/?format=json&pack_size__dozen=7)
