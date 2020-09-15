@@ -1,12 +1,13 @@
 # Coffee-Time
 a Project using Python/Django, Django Rest Framework and MongoDB to Build a **RESTful API** with endpoints that return products data in JSON format for building an e-commerce mobile application
 
-### live demo:
-web service instance deployed on **Heroku** and configured with a **MongoDB Atlas** instance, a Cloud-hosted MongoDB service.
+### live demo with browsable API:
+Please check the link to instance of the web service deployed on **Heroku** and configured with a **MongoDB Atlas**, a Cloud-hosted MongoDB service.
 ***[https://coffeetime-api.herokuapp.com](https://coffeetime-api.herokuapp.com)***
 
-visiting the url will display human-friendly HTML output discribe each resource available with clickable urls for easy API browsing by humans.
+Visiting the url will display human-friendly HTML output discribe each resource available with **browsable and clickable urls** for easy API browsing by humans.
 
+The browsable API ensures that all the endpoints you create in your API are able to respond both with machine readable (in JSON) and human readable (in HTML) representations.
 
 By default, the API will return the format specified by the headers, which in the case of the browser is HTML. The format can be specified using `?format=` in the request, so you can look at the raw JSON response in a browser by adding `?format=json` to the URL.
 
