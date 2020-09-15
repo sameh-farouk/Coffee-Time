@@ -3,9 +3,13 @@ from rest_framework import routers
 from . import views
 
 router = routers.DefaultRouter()
-router.register(r'coffee-machines', views.CoffeeMachineViewSet)
-router.register(r'coffee-pods', views.CoffeePodViewSet)
+router.get_api_root_view().cls.__name__ = "CoffeeTime Restful Web Service"
+router.get_api_root_view().cls.__doc__ = "API to work with CoffeeTime, an e-commerce mobile application"
+
+router.register(r'api/coffee-machines', views.CoffeeMachineViewSet)
+router.register(r'api/coffee-pods', views.CoffeePodViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
+    
 ]

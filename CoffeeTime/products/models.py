@@ -4,7 +4,6 @@ from djongo import models
 # Create your models here.
 class CoffeeMachineType(models.Model):
     name = models.CharField(max_length=50, unique=True)
-
     def __str__(self):      
         return self.name
 
@@ -25,7 +24,7 @@ class CoffeePodType(models.Model):
 
 class CoffeePodFlavor(models.Model):
     name = models.CharField(max_length=50, unique=True)
-    
+
     def __str__(self):
         return self.name
 

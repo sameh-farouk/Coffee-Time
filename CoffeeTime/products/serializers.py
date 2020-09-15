@@ -1,19 +1,23 @@
 from .models import CoffeeMachine, CoffeePod
 from rest_framework import serializers
 
+
 class CoffeeMachineSerializer(serializers.HyperlinkedModelSerializer):
-    product_type = serializers.ReadOnlyField(source='product_type.name')
-    model = serializers.ReadOnlyField(source='product_type.name')
+    #product_type = serializers.ReadOnlyField(source='product_type.name')
+    #model = serializers.ReadOnlyField(source='model.name')
 
     class Meta:
         model = CoffeeMachine
-        fields = ['sku', 'product_type', 'model', 'water_line_compatible']
+        #fields = ['sku', 'product_type', 'model', 'water_line_compatible',]
+        fields = ['sku',]  
+
 
 class CoffeePodSerializer(serializers.HyperlinkedModelSerializer):
-    product_type = serializers.ReadOnlyField(source='product_type.name')
-    flavor = serializers.ReadOnlyField(source='flavor.name')
-    pack_size = serializers.ReadOnlyField(source='pack_size.name')
+    #product_type = serializers.ReadOnlyField(source='product_type.name')
+    #flavor = serializers.ReadOnlyField(source='flavor.name')
+    #pack_size = serializers.ReadOnlyField(source='pack_size.name')
 
     class Meta:
         model = CoffeeMachine
-        fields = ['sku', 'product_type', 'flavor', 'pack_size']
+        #fields = ['sku', 'product_type', 'flavor', 'pack_size',]
+        fields = ['sku',]
