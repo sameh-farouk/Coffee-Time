@@ -11,5 +11,4 @@ router.register(r'api/coffee-pods', views.CoffeePodViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-
 ]

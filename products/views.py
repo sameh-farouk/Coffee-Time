@@ -5,25 +5,6 @@ from .models import CoffeeMachine, CoffeePod, CoffeeMachineType, CoffeePodType, 
 from rest_framework import viewsets, mixins
 from .serializers import CoffeeMachineSerializer, CoffeePodSerializer
 from django_filters.rest_framework import DjangoFilterBackend
-from django_filters import rest_framework as filters
-
-
-class CoffeeMachineFilter(filters.FilterSet):
-    product_type = filters.ModelChoiceFilter(queryset=CoffeeMachineType.objects.all())
-
-    class Meta:
-        model = CoffeeMachine
-        fields = ['product_type', 'water_line_compatible']
-
-
-class CoffeePodFilter(filters.FilterSet):
-    product_type = filters.ModelChoiceFilter(queryset=CoffeePodType.objects.all())
-    flavor = filters.ModelChoiceFilter(queryset=CoffeePodFlavor.objects.all())
-    pack_size = filters.ModelChoiceFilter(queryset=CoffeePodPacksize.objects.all())
-
-    class Meta:
-        model = CoffeePod
-        fields = ['product_type', 'flavor', 'pack_size']
 
 
 class CoffeeMachineViewSet(mixins.ListModelMixin ,viewsets.GenericViewSet):
@@ -33,8 +14,7 @@ class CoffeeMachineViewSet(mixins.ListModelMixin ,viewsets.GenericViewSet):
     queryset = CoffeeMachine.objects.all()
     serializer_class = CoffeeMachineSerializer
     filter_backends = [DjangoFilterBackend]
-    #filterset_fields = ['product_type__name', 'water_line_compatible']
-    filterset_class = CoffeeMachineFilter
+    filterset_fields = ['product_type__name', 'water_line_compatible']
 
 
 class CoffeePodViewSet(mixins.ListModelMixin ,viewsets.GenericViewSet):
@@ -44,6 +24,4 @@ class CoffeePodViewSet(mixins.ListModelMixin ,viewsets.GenericViewSet):
     queryset = CoffeePod.objects.all()
     serializer_class = CoffeePodSerializer
     filter_backends = [DjangoFilterBackend]
-    #filterset_fields = ['product_type__name', 'flavor__name', 'pack_size__dozen']
-    filterset_class = CoffeePodFilter
-
+    filterset_fields = ['product_type__name', 'flavor__name', 'pack_size__dozen']
