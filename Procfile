@@ -1,1 +1,1 @@
-web: gunicorn CoffeeTime.wsgi
+web: gunicorn CoffeeTime/CoffeeTime.wsgi
