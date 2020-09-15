@@ -84,9 +84,9 @@ DATABASES = {
         'ENGINE': 'djongo',
         'NAME': 'coffetime_db',
         'CLIENT': {
-           #'host': '127.0.0.1',
-           'host': 'mongodb+srv://sameh:Cy9lw3LeE9wxXoZI@cluster0.djw30.mongodb.net',
-           #'port': 27017,
+           'host': '127.0.0.1',
+           #'host': 'mongodb+srv://<username>:<password>@cluster0.djw30.mongodb.net',
+           'port': 27017,
         }
     }
 }
