@@ -1,1 +1,0 @@
-web: gunicorn CoffeeTime.wsgi --log-file -
