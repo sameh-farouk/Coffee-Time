@@ -25,7 +25,7 @@ SECRET_KEY = 'w9wt9lo8lp7y_+j1=xjog5@8x+*b66*e6r_1i@vy*w8*)muj@s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['coffeetime-api.herokuapp.com']
 
 
 # Application definition
