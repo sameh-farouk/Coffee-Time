@@ -47,6 +47,7 @@ class CoffeeMachine(models.Model):
     def __str__(self):
         return f'{self.sku} - {self.product_type}, {self.model}{", water line compatible" if self.water_line_compatible else ""}'
 
+
 class CoffeePod(models.Model):
     sku = models.CharField(max_length=50, unique=True)
     product_type = models.ForeignKey('CoffeePodType', on_delete=models.PROTECT)

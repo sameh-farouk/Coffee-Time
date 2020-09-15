@@ -130,6 +130,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 
+STATICFILES_DIRS = (
+    ("js", STATIC_ROOT / 'js'),
+    ("css", STATIC_ROOT /  'css'),
+    ("images", STATIC_ROOT / 'images'),
+    ("fonts", STATIC_ROOT / 'fonts'),
+)
+
 #cors
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
