@@ -1,14 +1,14 @@
 # Coffee-Time
-a Project using Python/Django, Django Rest Framework and MongoDB to Build a RESTful API with endpoints that return products data in JSON format for building an e-commerce mobile application
+a Project using Python/Django, Django Rest Framework and MongoDB to Build a **RESTful API** with endpoints that return products data in JSON format for building an e-commerce mobile application
 
 ### live demo:
-web service instance deployed on Heroku and configured with a MongoDB Atlas instance, a Cloud-hosted MongoDB service.
-[https://coffeetime-api.herokuapp.com](https://coffeetime-api.herokuapp.com)
+web service instance deployed on **Heroku** and configured with a **MongoDB Atlas** instance, a Cloud-hosted MongoDB service.
+***[https://coffeetime-api.herokuapp.com](https://coffeetime-api.herokuapp.com)***
 
 visiting the url will display human-friendly HTML output discribe each resource available with clickable urls for easy API browsing by humans.
 
 
-By default, the API will return the format specified by the headers, which in the case of the browser is HTML. The format can be specified using ?format= in the request, so you can look at the raw JSON response in a browser by adding ?format=json to the URL.
+By default, the API will return the format specified by the headers, which in the case of the browser is HTML. The format can be specified using `?format=` in the request, so you can look at the raw JSON response in a browser by adding `?format=json` to the URL.
 
 
 ### Technology Used
@@ -20,6 +20,7 @@ By default, the API will return the format specified by the headers, which in th
 - djongo 1.3.3
 - django-cors-headers 3.5.0
 - django-filter 2.3.0
+- Git 2.27
 
 ### API
 #### paths:
